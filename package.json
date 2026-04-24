@@ -1,0 +1,60 @@
+{
+  "name": "children-english-learning-platform",
+  "version": "1.0.0",
+  "description": "A children's English learning platform with spaced repetition and image-based quizzes",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "migrate:up": "ts-node src/database/migrate.ts up",
+    "migrate:down": "ts-node src/database/migrate.ts down",
+    "migrate:verify": "ts-node src/database/migrate.ts verify"
+  },
+  "keywords": [
+    "english",
+    "learning",
+    "education",
+    "spaced-repetition",
+    "children"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^9.3.0",
+    "@types/uuid": "^10.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.6",
+    "@types/pg": "^8.10.9",
+    "@types/supertest": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "fast-check": "^3.15.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

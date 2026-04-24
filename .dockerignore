@@ -1,0 +1,46 @@
+# Node modules
+node_modules
+npm-debug.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Tests
+coverage
+*.test.ts
+*.test.js
+__tests__
+
+# Documentation
+*.md
+!README.md
+docs
+
+# Build artifacts
+dist
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kiro specs
+.kiro
+
+# Task summaries
+TASK_*.md
